@@ -10,6 +10,7 @@ $grey-dark: #9c9da1;
         border-left: 1px solid $grey-dark;
     }
     .navbar-nav {
+        font-size: 12px;
         align-items: center;
         .facility-dropdown {
             height: 50px;
@@ -18,6 +19,9 @@ $grey-dark: #9c9da1;
                 border: none;
                 background-color: transparent;
             }
+        }
+        .date-picker {
+            color: #fff;
         }
     }
     
