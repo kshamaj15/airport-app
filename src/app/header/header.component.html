@@ -5,15 +5,17 @@
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
+        <li class="nav-item dropdown facility-dropdown">
+          <div class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="pr-1"><img src="../../assets/location-marker.svg" height="14px"/></span>
+            <span class="pr-1">{{selectedFacility}}</span>
+          </div>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <app-dropdown 
             [placeholder]="'Search Facility..'" 
             [optionsList]="optionsList"
             [labelName]="'name'"
+            [selectedOption]="selectedFacility"
             [returnValue]="'name'"
             (getSelectedItem)="getSelectedItem($event)"
           ></app-dropdown>

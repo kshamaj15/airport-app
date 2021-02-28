@@ -37,7 +37,7 @@ $grey-dark: #888b8f;
         font-size: 12px;
         padding: 0 8px;
         color: black;
-        &-selected {
+        .selected {
             color: $blue-color;
             font-weight: 600;            
         }        

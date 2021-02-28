@@ -6,8 +6,8 @@
     <div class="dropdown-options">
         <ng-container *ngIf="filterdOptionsList.length > 0 else elseBlock">
             <div *ngFor="let option of filterdOptionsList" class="dropdown-option" (click)="selectOption(option[returnValue])">
-                <span>{{option[labelName]}}</span>
-                <img src="../../../assets/check.svg" height="10px"/>
+                <span [ngClass]="{'selected' : selectedOption === option[returnValue]}">{{option[labelName]}}</span>
+                <img *ngIf="selectedOption === option[returnValue]" src="../../../assets/check.svg" height="10px"/>
             </div>
         </ng-container>
         <ng-template #elseBlock>

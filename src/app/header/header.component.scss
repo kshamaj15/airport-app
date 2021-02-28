@@ -1,8 +1,24 @@
 $header-color: #051d53;
 // $header-color: #fff;
 $blue-color: 0D5799;
+$grey-dark: #9c9da1;
 
 .navbar {
     background-color: $header-color;
-    color: #fff;
+    padding: 0;
+    .nav-item {
+        border-left: 1px solid $grey-dark;
+    }
+    .navbar-nav {
+        align-items: center;
+        .facility-dropdown {
+            height: 50px;
+            color: #fff;
+            .dropdown-menu {
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+    
 }

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   optionsList: any;
+  selectedFacility: String = 'select';
   constructor() { }
 
   ngOnInit(): void {
@@ -26,7 +27,7 @@ export class HeaderComponent implements OnInit {
   }
 
   getSelectedItem(e): void {
-    console.log(e);
+    this.selectedFacility = e;
   }
 
 }
