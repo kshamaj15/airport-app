@@ -1,0 +1,45 @@
+$blue-color: #0D5799;
+$grey-color: #e8ebee;
+$grey-dark: #888b8f;
+
+.dropdown {
+    color: #000;
+    border-radius: 14px;
+    padding: 0 3px;
+    border: 1px solid $grey-color;
+    box-shadow: 5px 5px 10px $grey-color;
+    &-search {
+        position: relative;
+        input {
+            background-color: $grey-color;
+            padding: 0 8px;
+            border-radius: 20px;
+            font-size: 12px;
+            border: 1px solid $grey-color;
+            &:focus {
+                outline: none;
+            }
+        }
+        img {
+            position: absolute;
+            right: 5px;
+            top: 7px;
+        }
+    }
+    &-option {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding: 0 8px;
+        color: black;
+        &-selected {
+            color: $blue-color;
+            font-weight: 600;            
+        }        
+    }
+}

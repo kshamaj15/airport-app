@@ -1,1 +1,18 @@
-<p>dropdown works!</p>
+<div class="dropdown">
+    <div class="dropdown-search">
+        <input placeholder="{{placeholder}}" #searchTxt (input)="filterOptions(searchTxt.value)"/>
+        <img src="../../../assets/search.svg" height="12px"/>
+    </div>
+    <div class="dropdown-options">
+        <ng-container *ngIf="filterdOptionsList.length > 0 else elseBlock">
+            <div *ngFor="let option of filterdOptionsList" class="dropdown-option" (click)="selectOption(option[returnValue])">
+                <span>{{option[labelName]}}</span>
+                <img src="../../../assets/check.svg" height="10px"/>
+            </div>
+        </ng-container>
+        <ng-template #elseBlock>
+            <div class="dropdown-option">No data</div>
+        </ng-template>
+        
+    </div>
+</div>
