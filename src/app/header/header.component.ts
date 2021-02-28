@@ -12,16 +12,19 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.optionsList = [{
-      name: 'Kshama',
+      name: 'TVC - cherry capital',
       key: '0'
     },{
-      name: 'Jisi',
+      name: 'TVF - theids river falls',
       key: '0'
     },{
-      name: 'Ankit',
+      name: 'TVL - Lane Tahoe',
       key: '0'
     },{
-      name: 'Gumgun',
+      name: 'BUF - Buffalo Niagara Intl',
+      key: '0'
+    },{
+      name: 'SFO - san francisco Intl',
       key: '0'
     }]
   }
